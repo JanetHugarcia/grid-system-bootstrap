@@ -17,10 +17,15 @@
 <body>
 	<div class="container-fluid">
     <header class="clearfix">
-      <div class="col-xs-12 col-md-5 pd-0">
-        <h1> Site name</h1>
+      <div class="col-xs-12 col-sm-6 col-md-5 pd-0 clearfix">
+        <h1 class="pull-left"> Site name</h1>
+        <ul class="hi2 nav navbar-nav navbar-right pull-right hidden-sm hidden-md hidden-lg">
+          <li><a href="#"><span class="glyphicon glyphicon-home icono "></span>Noticias</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-home icono "></span>Enlaces RSS</a></li>
+          <div class="border hidden-xs hidden-md hidden-sm"></div>
+        </ul>
       </div>
-      <div class="col-xs-12 col-md-7">
+      <div class="col-xs-12 col-sm-6 col-md-7 pd-0">
         <nav class="navbar ">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,18 +40,17 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               
-              <form class="navbar-form navbar-right" role="search">
+              <form class="navbar-form navbar-right hidden-md  hidden-sm" role="search">
                 
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Ingresa tu búsqueda">
                 </div>
                 <button type="submit" class="btn btn-default">Buscar</button>
               </form>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-home icono"></span>Noticias</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-home icono"></span>Enlaces RSS</a></li>
-                <div class="border"></div>
-                
+              <ul class="nav navbar-nav navbar-right ">
+                <li><a href="#"><span class="glyphicon glyphicon-home icono "></span>Noticias</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-home icono "></span>Enlaces RSS</a></li>
+                <div class="border hidden-xs hidden-md hidden-sm"></div>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -54,7 +58,7 @@
       </div>
     </header>
     <section>
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs secundario">
         <li role="presentation" class="active"><a href="#">Bienvenido</a></li>
         <li role="presentation"><a href="#">Actualidades</a></li>
         <li role="presentation"><a href="#">En directo</a></li>
@@ -64,7 +68,7 @@
       </ul>
     </section>
     <section id="noticia" class="clearfix">
-      <div class="col-md-6 pd-0">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 pd-0">
         <div class="history">Historia destacada</div>
         <div class="art">
           <div class="articulo">
@@ -72,7 +76,7 @@
             <div class="border"></div>
             <small>publicado el 03/10/15</small>
           </div>
-          <div class="art-info">
+          <div class="art-info clearfix">
             <span class="sub space">Lorem ispum et diligat gentris</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci.</p>
             <div class="etiquetas">
@@ -95,7 +99,7 @@
             <div class="border"></div>
             <small >publicado el 03/10/15</small>
           </div>
-          <div class="art-info">
+          <div class="art-info clearfix">
             <span class="sub space">Lorem ispum et diligat gentris</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci.</p>
             <div class="etiquetas">
@@ -117,9 +121,10 @@
             <div class="border"></div>
             <small>publicado el 03/10/15</small>
           </div>
-          <div class="art-info">
+          <div class="art-info clearfix">
             <span class="sub space">Lorem ispum et diligat gentris</span>
             <div class="imagen"><p>FOTO</p></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci. </p>
             <div class="etiquetas clearfix">
                 <span class=" glyphicon glyphicon-bookmark sub"></span>
                 <a class="sub"href="">Ver más...</a>
@@ -134,7 +139,7 @@
           </div>
         </div>
         <div class="art">
-          <div class="art-info">
+          <div class="art-info clearfix">
             <span class="sub space">Lorem ispum et diligat gentris</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci.</p>
             <div class="etiquetas">
@@ -151,88 +156,94 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 pd-0">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 pd-0">
         <article class="bck-gray">
           <div class="history">Historia destacada</div>
           <div class="video">
+            <div class="botones">
+              <span class="glyphicon glyphicon-play"></span>
+              <div class="horizontal"><div class="bola"></div></div>
+              <span class="glyphicon glyphicon-volume-up"></span>
+              <span class="glyphicon glyphicon-repeat"></span>
+            </div>
           </div>
-          <div class="art-info">
-            <span class="sub space">Lorem ispum et diligat gentris</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci.</p>
-            <div class="etiquetas">
-                <span class=" glyphicon glyphicon-bookmark sub"></span>
-                <a class="sub"href="">Ver más...</a>
+          <div class="inf-video">
+            <div class="art-info">
+              <span class="sub space">Claire Dupond</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur omnis quisquam magnam adipisci, voluptates nostrum optio eos eveniet. Architecto excepturi fuga repudiandae enim itaque debitis commodi quam rem adipisci.</p>
+              <div class="etiquetas">
+                <small>publicado el 03/10/15</small>
+                
                 <span class="pull-right">
-                  <span class="glyphicon glyphicon-triangle-right icon sub"><div class="cuadradito"></div></span>
-                  <span class="sub">Etiquetas:</span>
-                  <a class="sub under"href="">lorem</a>
-                  <a class="sub under"href="">digital</a>
-                  <a class="sub under"href="">ventus</a>
+                 <span class=" glyphicon glyphicon-bookmark sub"></span>
+                  <a class="sub"href="">Ver más...</a> 
                 </span>
+              </div>
             </div>
           </div>
         </article>
-        <div class="history w-250">Agenda</div>
-        <article class="little-art">
-          <div class="art-info ">
-            <div class="imagen img"><p>23<br> Enero</p></div>
-            <div class="art-bruto">
-              <span class="sub ">Lorem ispum et diligat</span>
-              <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <small>De 23 a 28 Diciembre 2015</small>
+        <div class="bck-white">
+          <div class="history w-250">Agenda</div>
+          <article class="little-art">
+            <div class="art-info ">
+              <div class="imagen img"><p>23<br> Enero</p></div>
+              <div class="art-bruto">
+                <span class="sub ">Lorem ispum et diligat</span>
+                <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <small>De 23 a 28 Diciembre 2015</small>
+              </div>
+            </div>
+          </article>
+          <article class="little-art">
+            <div class="art-info ">
+              <div class="imagen img"><p>23<br> Enero</p></div>
+              <div class="art-bruto">
+                <span class="sub ">Lorem ispum et diligat</span>
+                <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <small>De 23 a 28 Diciembre 2015</small>
+              </div>
+            </div>
+          </article>
+          <article class="little-art">
+            <div class="art-info ">
+              <div class="imagen img"><p>23<br> Enero</p></div>
+              <div class="art-bruto">
+                <span class="sub ">Lorem ispum et diligat</span>
+                <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <small>De 23 a 28 Diciembre 2015</small>
+              </div>
+            </div>
+          </article>
+          <article class="little-art">
+            <div class="art-info ">
+              <div class="imagen img"><p>23<br> Enero</p></div>
+              <div class="art-bruto">
+                <span class="sub ">Lorem ispum et diligat</span>
+                <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <small>De 23 a 28 Diciembre 2015</small>
+              </div>
+            </div>
+          </article>
+          <div class="more">
+            <span class="informacion">Más información</span>
+            <a class="sub under f-12" href="#">Localidades</a>
+            <div class="art-info ">
+              <div class="art-bruto">
+                <span class="sub ">Lorem ispum et diligat</span>
+                <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <a class="sub under f-12" href="#">Hospimedia</a>
+            <div class="art-info ">
+              <div class="art-bruto">
+                <span class="sub ">Lorem ispum et diligat</span>
+                <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
             </div>
           </div>
-        </article>
-        <article class="little-art">
-          <div class="art-info ">
-            <div class="imagen img"><p>23<br> Enero</p></div>
-            <div class="art-bruto">
-              <span class="sub ">Lorem ispum et diligat</span>
-              <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <small>De 23 a 28 Diciembre 2015</small>
-            </div>
-          </div>
-        </article>
-        <article class="little-art">
-          <div class="art-info ">
-            <div class="imagen img"><p>23<br> Enero</p></div>
-            <div class="art-bruto">
-              <span class="sub ">Lorem ispum et diligat</span>
-              <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <small>De 23 a 28 Diciembre 2015</small>
-            </div>
-          </div>
-        </article>
-        <article class="little-art">
-          <div class="art-info ">
-            <div class="imagen img"><p>23<br> Enero</p></div>
-            <div class="art-bruto">
-              <span class="sub ">Lorem ispum et diligat</span>
-              <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <small>De 23 a 28 Diciembre 2015</small>
-            </div>
-          </div>
-        </article>
-        <div class="more">
-          <span class="informacion">Más información</span>
-          <a class="sub under f-12" href="#">Localidades</a>
-          <div class="art-info ">
-            <div class="art-bruto">
-              <span class="sub ">Lorem ispum et diligat</span>
-              <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <a class="sub under f-12" href="#">Localidades</a>
-          <div class="art-info ">
-            <div class="art-bruto">
-              <span class="sub ">Lorem ispum et diligat</span>
-              <p class="mg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        
         </div>
       </div>
-      <div class="col-md-2 pd-0">
+      <div class="hidden-xs hidden-sm hidden-md col-lg-3 pd-0 ">
         <span class="informacion">Más información</span>
         <div class="etiquetas">
           <ul>
@@ -273,9 +284,140 @@
           <h5>PREGUNTAS</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         </div>
+        <div class="bck-graylight">
+          <h4>MAGAZINE <span class="informacion">ACCIONES COMUNES</span></h4>
+          <h5>ENQUETE</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio possimus odit molestias maiores, similique</p>
+          <h5>PREGUNTAS</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+        <div class="bck-graylight ">
+          <p class="ng">Nueva generación de la internet<p>
+        </div>
       </div>
     </section>
-  
+    <footer class="pd-0 clearfix">
+      <hr>
+      <div class="everynav pull-left">
+        <span class="informacion">Rubros</span>
+        <div class="navotros">
+          <ul>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Actualidades</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">En directo</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Reporte financiero</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Nuestra oferta</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">De nosotros a ustedes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="everynav pull-left">
+        <span class="informacion">Expertise</span>
+        <div class="navotros">
+          <ul>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Finanzas y fiscalización</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Investigación</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Medio ambiente</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Habitat/Urbanismo</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Sanidad</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Social/Servicios</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Transporte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="everynav pull-left">
+        <span class="informacion">Suscripción</span>
+        <div class="navotros">
+          <ul>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Todo el flujo</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Flujo RSS para expertos</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Noticias</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="everynav pull-left">
+        <span class="informacion">Nosotros</span>
+        <div class="navotros">
+          <ul>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">¿Quienes somos?</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Plan del sitio</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Información legal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="everynav pull-left hidden-xs hidden-md hidden-sm">
+        <span class="informacion">Contacto</span>
+        <div class="navotros">
+          <ul>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Contáctanos</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">FAQ</a>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-bookmark sub"></span>
+              <a class="sub"href="">Haga sus preguntas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
   </div>
 

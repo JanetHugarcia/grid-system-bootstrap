@@ -11,9 +11,7 @@ body{
 .mg-0{
 	margin: 0;
 }
-.text-black{
-	color:black;
-}
+
 .form-control {
 	border-radius:0px;
 	border:1px solid black;
@@ -35,11 +33,16 @@ h1{
 h1,h5,.navbar-form{
 	margin:0px;
 }
-
+.navbar-right{
+	margin-top: 0px;
+}
+.navbar-form{
+	margin-top: 10px;
+}
 .border{
 	border-left:2px solid black;
 	height: 26px;
-	margin-top:2px;
+	margin-top:10px;
 	margin-right:15px;
 	display: inline-block;
 }
@@ -49,9 +52,11 @@ a{
 .icono{
 	margin-right: 6px;
 }
+header h1 {
+	margin-left: 4%;
+}
 /*nav tbas*/
 section{
-	outline:1px solid green;
 	padding:0% 2.5%;
 }
 .nav-tabs{
@@ -68,12 +73,17 @@ section{
     padding-left: 25px;
     padding-right: 25px;
 }
+
+#noticia {
+	margin-top: 2%;
+}
 /*columna1*/
 #noticia .history{
 	padding: 3px 10px;
 	color:white;
 	background-color: #929292;
 	display:inline-block;
+	margin-bottom: 2%;
 }
 .articulo{
 	position: relative;
@@ -121,15 +131,13 @@ section{
 	height: 160px;
 	background-color: #AAAAAA;
 	font-weight: 600;
-	padding-top: 80px;
-	
+	padding-top: 80px;	
 }
 	.art-info .imagen p{
 		color:black;
 		text-align: center;
 		transform:translatey(-50%);
 		font-size: 16px;
-	
 	}
 .art-info p{
 	width: 100%;
@@ -137,6 +145,7 @@ section{
 	font-weight: 600;
 	color:rgba(0,0,0,0.3);
 	text-align: justify;
+	margin-top: 2%;
 }
 	.art-info .space{
 		line-height: 3;
@@ -166,13 +175,72 @@ section{
 		text-decoration: underline;
 	}
 /*columna2*/
+.bck-gray{
+	background-color:#D6D6D6;
+	padding-right: 6px;
+	padding-left: 6px;
+	padding-bottom:15px;
+	margin-bottom: 2%;
+
+}
+.video{
+	background-color: white;
+	border:1px solid rgba(0,0,0,.5);
+	border-top: 2px solid rgba(0,0,0,.5);
+	height: 200px;
+	width: 100%;
+	position:relative;
+}
+.botones{
+	width: 100%;
+	position: absolute;
+	bottom:0;
+	height: 40px;
+	border-top: 1px solid rgba(0,0,0,.5);
+	background-color: #E6E6E6;
+	padding:1%;
+}
+.horizontal{
+	display: inline-block;
+	border-top: 3px solid white;
+	width: 70%;
+	position: relative;
+	-webkit-transform: translateY(-100%);
+	   -moz-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	     -o-transform: translateY(-100%);
+	        transform: translateY(-100%);
+}
+.bola{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: black;
+	top:0;
+	left:50%;
+	transform: translateX(-50%);
+	transform: translateY(-55%);
+}
+.botones span{
+	margin: 2%;
+}
+
+.inf-video .etiquetas {
+    padding-right: 5%;
+}
+
+.inf-video small{
+	  font-size: 1rem;
+    color: rgba(0,0,0,.5);
+}
 .little-art{
 	padding:10px 10px 0px 0px;
 }
 .little-art .img{
-	width: 74px;
-	height: 74px;
-	padding-top:37px;
+	width: 100px;
+	height: 80px;
+	padding-top:40px;
 	margin-right: 20px;
 }
 .little-art .img p{
@@ -192,7 +260,9 @@ section{
 	margin-top: 5%;
 	padding-right: 30%;
 }
-
+.bck-white{
+	padding-left: 10px;
+}
 .f-12{
 	font-size: 13px;
 	font-weight: 600;
@@ -207,34 +277,60 @@ section{
 /*columna3*/
 .etiquetas ul{
 	list-style-type:none;
-	padding: 10px 0 10px 15px ;
+	padding: 10px 0 10px 20px ;
 	border-bottom: 1px solid rgba(0,0,0,.3)
 }
 .bck-graylight{
 	background-color: #EBEBEB;
-	padding: 3% 20% 5% 8px ;
+	padding: 1% 18% 5% 5% ;
+	margin-top: 3%;
 	
 }
 .bck-graylight h5{
-	margin-top: 10%;
+	margin-top: 5%;
 }
 .bck-graylight p,.bck-graylight h5{
 	font-weight: 600;
 	font-size: 11px;
 	color:rgba(0,0,0,.3);
 }
-@media (min-width: 701px){
+
+.bck-graylight .ng{
+	color:#000;
+	padding-top: 5%;
+	padding-right: 20%;
+}
+
+hr{
+	margin-top: 5%;
+	margin-bottom: 10px;
+	width: 95 %;
+	border:3px solid black;
+}
+footer .everynav{
+	margin:0 2%;
+
+}
+footer .everynav ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+	
 	header{
 	margin: 1% auto 0%;
-	outline:1px solid tomato;
 	width: 95%;
+	}
+	header h1 {
+    margin-left: 0%;
 	}
 	.container-fluid{
 		padding:0;
 	}
 	.navbar-form {
     padding:0px; 
-}
+	}
 	.navbar-collapse {
     padding-right: 0px; 
     padding-left: 0px; 
@@ -246,7 +342,19 @@ section{
 	.navbar {
 	     margin-bottom: 0px; 
 	}
-
+	.nav-tabs li a{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.nav>li>a{
+		padding:10px 10px;
+	}
+	.nav-tabs li:first-child{
+		margin-left: 0px;
+	}
+	.horizontal {
+   		width: 70%;
+	}
 
 }
 @media (max-width: 767px){
@@ -262,7 +370,22 @@ section{
 		font-size: 19px;
 		color:black;
 	}
+	header h1{
+		margin-left: 0;
+	}
+	.hi2 li{
+		display: inline-block;
+	}
+	.hi2 li a{
+		padding: 10px;
+	}
 	.border{
 		display:none;
+	}
+	.secundario{
+		display: none;
+	}
+	.horizontal {
+   		width: 60%;
 	}
 }
